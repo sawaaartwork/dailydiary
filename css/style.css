@@ -1,0 +1,84 @@
+:root {
+    --color-yellow-500: #F1D37D;
+    --color-blue-50: #F4F7FB;
+    --color-blue-200: #E2E8F0;
+    --color-blue-500: #618BC9;
+    --color-blue-700: #3E518C;
+    --color-blue-900: #102347;
+    --color-grey-100: #EDEDED;
+    --color-grey-900: #222;
+
+    --color-primary: var(--color-yellow-500);
+    --color-secondary-background: var(--color-blue-50);
+    --color-secondary: var(--color-blue-500);
+    --color-bodytext: var(--color-grey-900);
+
+    --fontsize-xnano: 10px;
+    --fontsize-nano: 11px;
+    --fontsize-micro: 12px;
+    --fontsize-small: 14px;
+    --fontsize-base: 16px;
+    --fontsize-medium: 18px;
+    --fontsize-large: 20px;
+    --fontsize-xlarge: 24px;
+    --fontsize-2xlarge: 28px;
+    --fontsize-3xlarge: 32px;
+    --fontsize-4xlarge: 40px;
+
+    --textsize-heading-pc: var(--fontsize-4xlarge);
+    --textsize-heading-sp: var(--fontsize-xlarge);
+
+    --spacing-nano: 4px;
+    --spacing-micro: 8px;
+    --spacing-small: 12px;
+    --spacing-base: 16px;
+    --spacing-medium: 20px;
+    --spacing-large: 24px;
+    --spacing-xlarge: 32px;
+    --spacing-2xlarge: 40px;
+    --spacing-3xlarge: 48px;
+    --spacing-4xlarge: 64px;
+    --spacing-5xlarge: 80px;
+
+    --border-radius: var(--spacing-micro);
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1080px) {
+    
+}
+
+@media screen and (min-width: 1081px){
+
+    
+
+    #problems .container {
+        width: 100%;
+        display: flex;
+        gap: var(--spacing-large);
+    }
+
+    #problems .container .items {
+        width: calc(33.33% - var(--spacing-large));
+        height: 100px;
+        padding: var(--spacing-medium);
+        border-radius: var(--border-radius);
+        list-style: none;
+
+        background-color: var(--color-blue-200);
+        color: var(--color-bodytext);
+        font-size: var(--fontsize-medium);
+    }
+
+    .section-heading {
+        font-size: var(--textsize-heading-pc);
+        color: var(--color-blue-900);
+    }
+
+    .contents-spacing {
+        width: 1080px;
+    }
+}
