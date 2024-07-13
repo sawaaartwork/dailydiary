@@ -8,11 +8,11 @@
     </head>
 
     <body>
-        <header id="header">
-            <img class="logo">
-            <a href="">アプリをダウンロード</a>
+        <header id="header" class="section-header">
+            <img class="logo" src="img/dd_white.svg">
+            <a class="button button__primary" href="">アプリをダウンロード</a>
         </header>
-        <section class="hero">
+        <section id="hero" class="section-hero">
             <span>思考や感情の変化を記録し</span>
             <span>自分を知る</span>
             <span>ジャーナリングアプリ</span>
@@ -20,7 +20,7 @@
             <a href=""></a>
             <a href=""></a>
         </section>
-        <section id="problems">
+        <section id="problems" class="section-problems section-container">
             <div class="contents-spacing">
                 <h2 class="section-heading">このようなお悩みはありませんか</h2>
                 <ul class="container">
@@ -36,7 +36,7 @@
                 </ul>
             </div>
         </section>
-        <section id="usage">
+        <section id="usage" class="section-usage section-container">
             <h2 class="section-heading">Daily Dairyの使い方</h2>
             <ul class="usage-container">
                 <li class="usages" data-count="01">
@@ -60,28 +60,28 @@
             <h2 class="section-heading">機能一覧</h2>
             <div class="functions-container">
                 <div class="functions">
-                    <img>
-                    <p>感情やストレス状況の記録</p>
+                    <img src="img/icon_feature_feeling.svg">
+                    <span>感情やストレス状況の記録</span>
                 </div>
                 <div class="functions">
-                    <img>
-                    <p>ウェアラブルデバイスとの連携</p>
+                    <img src="img/icon_feature_wearable.svg">
+                    <span>ウェアラブルデバイスとの連携</span>
                 </div>
                 <div class="functions">
-                    <img>
-                    <p>考えたことメモ</p>
+                    <img src="img/icon_feature_memo.svg">
+                    <span>考えたことメモ</span>
                 </div>
                 <div class="functions">
-                    <img>
-                    <p>デイリー・ウィークリーレター</p>
+                    <img src="img/icon_feature_letter.svg">
+                    <span>デイリー・ウィークリーレター</span>
                 </div>
                 <div class="functions">
-                    <img>
-                    <p>AIコメント機能</p>
+                    <img src="img/icon_feature_aicomment.svg">
+                    <span>AIコメント機能</span>
                 </div>
             </div>
         </section>
-        <section id="users-voice">
+        <section id="users-voice" class="user-voise-section section-container">
             <h2 class="section-heading">ご利用者さまの声</h2>
             <div class="users-voice-container">
                 <div class="user-voices">
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </section>
-        <section id="security">
+        <section id="security" class="secrity-section section-container">
             <h2 class="section-heading">プライバシーの保護について</h2>
             <div class="container">
                 <div class="item">
@@ -129,76 +129,72 @@
                 </div>
             </div>
         </section>
-        <section id="plan">
-            <input type="radio" name="switch" id="switch_01" checked><label for="switch_01">月額</label>
-            <input type="radio" name="switch" id="switch_02"><label for="switch_02">年額</label>
-            <div class="container">
-                <div class="item">
-                    <div class="title ">
-                        <span>レギュラープラン</span>
-                        <span>1ヶ月</span>
-                        <span>¥500</span>
+        <section id="plan" class="plan section-container background-color__light">
+            <div class="contents-spacing">
+                <h2 class="section-heading">プラン</h2>
+                <input type="radio" name="switch" id="switch_01" checked><label for="switch_01">月額</label>
+                <input type="radio" name="switch" id="switch_02"><label for="switch_02">年額</label>
+                <div class="container">
+                    <div class="item">
+                        <div class="title ">
+                            <span>レギュラープラン</span>
+                            <span>1ヶ月</span>
+                            <span>¥500</span>
+                        </div>
+                        <div class="title">
+                            <span>レギュラープラン</span>
+                            <span>1年</span>
+                            <span>¥5,500</span>
+                        </div>
+                        <ul class="function">
+                            <li>感情の記録</li>
+                            <li>感情の自動記録（ウェアラブルデバイスとの同期）</li>
+                            <li>考えたことメモ</li>
+                            <li>デイリーウィークリーレター</li>
+                            <li>AIコメント機能（月10回まで）</li>
+                        </ul>
+                        <div class="trial">
+                            <p>30日間の無料トライアル期間つき</p>
+                            <p>トライアル終了の2日前に通知が届きます</p>
+                        </div>
                     </div>
-                    <div class="title">
-                        <span>レギュラープラン</span>
-                        <span>1年</span>
-                        <span>¥5,500</span>
+                    <div class="plans">
+                        <div class="title">
+                            <span>フリープラン</span>
+                            <span>¥0</span>
+                        </div>
+                        <ul class="function">
+                            <li>感情の記録（ウェアラブルデバイスからのインポートはできません）</li>
+                            <li>考えたことメモ</li>
+                            <li>ウィークリーレター（直近1週間のもののみ閲覧可能）</li>
+                            <li>AIコメント機能（月1回まで）</li>
+                        </ul>
                     </div>
-                    <ul class="function">
-                        <li>感情の記録</li>
-                        <li>感情の自動記録（ウェアラブルデバイスとの同期）</li>
-                        <li>考えたことメモ</li>
-                        <li>デイリーウィークリーレター</li>
-                        <li>AIコメント機能（月10回まで）</li>
-                    </ul>
-                    <div class="trial">
-                        <p>30日間の無料トライアル期間つき</p>
-                        <p>トライアル終了の2日前に通知が届きます</p>
-                    </div>
-                </div>
-                <div class="plans">
-                    <div class="title">
-                        <span>フリープラン</span>
-                        <span>¥0</span>
-                    </div>
-                    <ul class="function">
-                        <li>感情の記録（ウェアラブルデバイスからのインポートはできません）</li>
-                        <li>考えたことメモ</li>
-                        <li>ウィークリーレター（直近1週間のもののみ閲覧可能）</li>
-                        <li>AIコメント機能（月1回まで）</li>
-                    </ul>
                 </div>
             </div>
         </section>
-        <section id="faq">
-            <h2 class="section-heading">よくある質問</h2>
-            <div class="container">
-                <div class="item">
-                    <details class="question">
-                        <summary>ここに質問文が入ります</summary>
-                        <img class="icon">
+        <section id="faq" class="section-faq section-container background-color__light">
+            <div class="contents-spacing">
+                <h2 class="section-heading">よくある質問</h2>
+                <div class="container">
+                    <details open class="items">
+                        <summary class="question">ここに質問文が入ります</summary>
+                        <div class="answer">
+                            <p>
+                                    ここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入ります
+                            </p>
+                        </div>
+                    </details>
+                    <details class="items">
+                        <summary class="question">ここに質問文が入ります</summary>
                         <div class="answer">
                             <p>
                                 ここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入ります
                             </p>
                         </div>
                     </details>
-                </div>
-                <div class="item">
-                    <details class="question">
-                        <summary>ここに質問文が入ります</summary>
-                        <img class="icon">
-                        <div class="answer">
-                            <p>
-                                ここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入ります
-                            </p>
-                        </div>
-                    </details>
-                </div>
-                <div class="item">
-                    <details class="question">
-                        <summary>ここに質問文が入ります</summary>
-                        <img class="icon">
+                    <details class="items">
+                        <summary class="question">ここに質問文が入ります</summary>
                         <div class="answer">
                             <p>
                                 ここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入ります

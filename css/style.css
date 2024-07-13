@@ -40,8 +40,115 @@
     --spacing-4xlarge: 64px;
     --spacing-5xlarge: 80px;
 
-    --border-radius: var(--spacing-micro);
+    --border-radius-s: var(--spacing-micro);
+    --border-radius-l: var(--spacing-4xlarge);
 }
+
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: var(--textsize-heading-pc);
+    color: var(--color-blue-900);
+}
+
+.contents-spacing {
+    width: 1080px;
+}
+
+.background-color__light {
+    background-color: var(--color-secondary-background);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 var(--spacing-medium);
+    border-radius: var(--border-radius-l);
+    font-size: var(--fontsize-base);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button__primary {
+    background-color: var(--color-primary);
+    color: var(--color-blue-900);
+}
+
+
+/* ヘッダー */
+.section-header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    justify-content: space-between;
+    z-index: 10;
+    box-sizing: border-box;
+    width: 100%;
+    padding: var(--spacing-medium) var(--spacing-2xlarge);
+}
+
+.section-header .logo {
+    height: 32px;
+}
+
+
+/* メインビジュアル */
+.section-hero {
+    height: 600px;
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+
+/* お悩み */
+.section-problems .container {
+    width: 100%;
+    display: flex;
+    gap: var(--spacing-large);
+}
+
+.section-problems .container .items {
+    width: calc(33.33% - var(--spacing-large));
+    height: 100px;
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius-s);
+    list-style: none;
+
+    background-color: var(--color-blue-200);
+    color: var(--color-bodytext);
+    font-size: var(--fontsize-medium);
+}
+
+
+/* FAQ */
+.section-faq .container .items {
+    border-radius: var(--border-radius-s);
+    padding: var(--spacing-large);
+    background-color: #fff;
+}
+
+.section-faq .container .items .question {
+    display: block;
+    cursor: pointer;
+}
+.section-faq .container .items .question::-webkit-details-marker {
+    display: block;
+}
+
+.section-faq .container .items .question::before {
+    content: "Q.";
+    font-size: var(--fontsize-xlarge);
+    color: var(--color-blue-700);
+}
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -53,32 +160,4 @@
 
 @media screen and (min-width: 1081px){
 
-    
-
-    #problems .container {
-        width: 100%;
-        display: flex;
-        gap: var(--spacing-large);
-    }
-
-    #problems .container .items {
-        width: calc(33.33% - var(--spacing-large));
-        height: 100px;
-        padding: var(--spacing-medium);
-        border-radius: var(--border-radius);
-        list-style: none;
-
-        background-color: var(--color-blue-200);
-        color: var(--color-bodytext);
-        font-size: var(--fontsize-medium);
-    }
-
-    .section-heading {
-        font-size: var(--textsize-heading-pc);
-        color: var(--color-blue-900);
-    }
-
-    .contents-spacing {
-        width: 1080px;
-    }
 }
