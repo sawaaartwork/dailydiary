@@ -13,7 +13,7 @@
     <body>
         <header id="header" class="section-header">
             <img class="logo" src="img/dd_white.svg">
-            <a class="button button__primary" href="">アプリをダウンロード</a>
+            <a class="button button--primary" href="">アプリをダウンロード</a>
         </header>
         <section id="hero" class="section-hero">
             <span>思考や感情の変化を記録し</span>
@@ -24,7 +24,7 @@
             <a href=""></a>
         </section>
         <section id="problems" class="section-problems section-container">
-            <div class="contents-container contents-container__spacing">
+            <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">このようなお悩みはありませんか</h2>
                 <ul class="problems-container">
                     <li class="problems-item">
@@ -39,8 +39,8 @@
                 </ul>
             </div>
         </section>
-        <section id="usage" class="section-usage section-container">
-            <div class="contents-container contents-container__spacing">
+        <section id="usage" class="section-usage section-container background-colo--light">
+            <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">Daily Dairyの使い方</h2>
                 <ul class="usage-container">
                     <li class="usage-item" data-count="01">
@@ -62,34 +62,34 @@
             </div>
         </section>
         <section id="functions" class="section-functions section-container">
-            <div class="contents-container contents-container__spacing">
+            <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">機能一覧</h2>
                 <div class="functions-container">
                     <div class="function-item">
-                        <img src="img/icon_feature_feeling.svg">
-                        <span>感情やストレス状況の記録</span>
+                        <img class="function-item__icon" src="img/icon_feature_feeling.svg">
+                        <span class="function-item__text">感情やストレス状況の記録</span>
                     </div>
                     <div class="function-item">
-                        <img src="img/icon_feature_wearable.svg">
-                        <span>ウェアラブルデバイスとの連携</span>
+                        <img class="function-item__icon" src="img/icon_feature_wearable.svg">
+                        <span class="function-item__text">ウェアラブルデバイスとの連携</span>
                     </div>
                     <div class="function-item">
-                        <img src="img/icon_feature_memo.svg">
-                        <span>考えたことメモ</span>
+                        <img class="function-item__icon" src="img/icon_feature_memo.svg">
+                        <span class="function-item__text">考えたことメモ</span>
                     </div>
                     <div class="function-item">
-                        <img src="img/icon_feature_letter.svg">
-                        <span>デイリー・ウィークリーレター</span>
+                        <img class="function-item__icon" src="img/icon_feature_letter.svg">
+                        <span class="function-item__text">デイリー・ウィークリーレター</span>
                     </div>
                     <div class="function-item">
-                        <img src="img/icon_feature_aicomment.svg">
-                        <span>AIコメント機能</span>
+                        <img class="function-item__icon" src="img/icon_feature_aicomment.svg">
+                        <span class="function-item__text">AIコメント機能</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="users-voice" class="user-voise-section section-container background-color__light">
-            <div class="contents-container contents-container__nospacing">
+        <section id="users-voice" class="user-voise-section section-container background-color--light">
+            <div class="contents-container contents-container--nospacing">
                 <h2 class="section-heading">ご利用者さまの声</h2>
                 <div class="users-voice-container">
                     <div class="users-voice-itemwrapper">
@@ -104,7 +104,7 @@
                             <p class="user-voice-item__bodytext">（ここにユーザーの声が入ります）</p>
                             <div class="user-voice-userprofile">
                                 <img class="user-voice-userprofile__icon" src="img/img_user_avater02.svg">
-                                <p class="user-voice-userprofile__text">10代・学生</p>
+                                <p class="user-voice-userprofil__text">10代・学生</p>
                             </div>
                         </div>
                         <div class="user-voice-item">
@@ -133,7 +133,7 @@
             </div>
         </section>
         <section id="security" class="secrity-section section-container">
-            <div class="contents-container contents-container__spacing">
+            <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">プライバシーの保護について</h2>
                 <div class="security-container">
                     <div class="security-item">
@@ -147,54 +147,55 @@
                 </div>
             </div>
         </section>
-        <section id="plan" class="plan section-container background-color__light">
-            <div class="contents-container contents-container__spacing">
+        <section id="plan" class="plan section-container background-color--light">
+            <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">プラン</h2>
-                <div>
-                    <input type="radio" name="switch" id="switch_01" checked><label for="switch_01">月額</label>
-                    <input type="radio" name="switch" id="switch_02"><label for="switch_02">年額</label>
-                </div>
-                <div class="container">
-                    <div class="item">
-                        <div class="title ">
-                            <span>レギュラープラン</span>
-                            <span>1ヶ月</span>
-                            <span>¥500</span>
+                <div class="plan-container">
+                    <div class="plan-item">
+                        <div class="plan-item-title plan-item-title--secondary">
+                            <p class="plan-item-title__text">レギュラープラン</p>
+                            <div class="switchbox">
+                                <input type="radio" name="switch" id="switch_01" class="switchbox__flag" checked><label for="switch_01" class="switchbox__label">月額</label>
+                                <input type="radio" name="switch" id="switch_02" class="switchbox__flag"><label for="switch_02" class="switchbox__label">年額</label>
+                            </div>
+                            <div class="switch_01-content plan-item-title-inner">
+                                <span class="plan-item-title__text">1ヶ月</span>
+                                <span class="plan-item-title__largetext">¥500</span>
+                            </div>
+                            <div class="switch_02-content plan-item-title-inner">
+                                <span class="plan-item-title__text">1年</span>
+                                <span class="plan-item-title__largetext">¥5,500</span>
+                            </div>
                         </div>
-                        <div class="title">
-                            <span>レギュラープラン</span>
-                            <span>1年</span>
-                            <span>¥5,500</span>
-                        </div>
-                        <ul class="function">
-                            <li>感情の記録</li>
-                            <li>感情の自動記録（ウェアラブルデバイスとの同期）</li>
-                            <li>考えたことメモ</li>
-                            <li>デイリーウィークリーレター</li>
-                            <li>AIコメント機能（月10回まで）</li>
+                        <ul class="plan-item-function">
+                            <li class="plan-item-function__text">感情の記録</li>
+                            <li class="plan-item-function__text">感情の自動記録（ウェアラブルデバイスとの同期）</li>
+                            <li class="plan-item-function__text">考えたことメモ</li>
+                            <li class="plan-item-function__text">デイリーウィークリーレター</li>
+                            <li class="plan-item-function__text">AIコメント機能（月10回まで）</li>
                         </ul>
-                        <div class="trial">
+                        <div class="plan-item-trial">
                             <p>30日間の無料トライアル期間つき</p>
                             <p>トライアル終了の2日前に通知が届きます</p>
                         </div>
                     </div>
-                    <div class="plans">
-                        <div class="title">
-                            <span>フリープラン</span>
-                            <span>¥0</span>
+                    <div class="plan-item">
+                        <div class="plan-item-title plan-item-title--normal">
+                            <p class="plan-item-title__text">フリープラン</p>
+                            <p class="plan-item-title__largetext">¥0</p>
                         </div>
-                        <ul class="function">
-                            <li>感情の記録（ウェアラブルデバイスからのインポートはできません）</li>
-                            <li>考えたことメモ</li>
-                            <li>ウィークリーレター（直近1週間のもののみ閲覧可能）</li>
-                            <li>AIコメント機能（月1回まで）</li>
+                        <ul class="plan-item-function">
+                            <li class="plan-item-function__text">感情の記録（ウェアラブルデバイスからのインポートはできません）</li>
+                            <li class="plan-item-function__text">考えたことメモ</li>
+                            <li class="plan-item-function__text">ウィークリーレター（直近1週間のもののみ閲覧可能）</li>
+                            <li class="plan-item-function__text">AIコメント機能（月1回まで）</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="faq" class="section-faq section-container background-color__light">
-            <div class="contents-container contents-container__spacing">
+        <section id="faq" class="section-faq section-container">
+            <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">よくある質問</h2>
                 <div class="faq-container">
                     <details open class="faq-item">
