@@ -12,8 +12,8 @@
 
     <body>
         <header id="header" class="section-header">
-            <img class="logo" src="img/dd_white.svg">
-            <a class="button button--primary" href="">アプリをダウンロード</a>
+            <img class="header__logo" src="img/dd_white.svg">
+            <a class="button button--primary" href="">ダウンロード</a>
         </header>
         <section id="hero" class="section-hero">
             <span>思考や感情の変化を記録し</span>
@@ -28,35 +28,41 @@
                 <h2 class="section-heading">このようなお悩みはありませんか</h2>
                 <ul class="problems-container">
                     <li class="problems-item">
-                        <p>自分の気持ちや価値観がよくわからない</p>
+                        <p class="problems-item__text">自分の気持ちや価値観がよくわからない</p>
                     </li>
                     <li class="problems-item">
-                        <p>気軽に記録・振り返りをしたい</p>
+                        <p class="problems-item__text">気軽に記録・振り返りをしたい</p>
                     </li>
                     <li class="problems-item">
-                        <p>考えていたことやその時の感情を書き留めて振り返りたい</p>
+                        <p class="problems-item__text">考えていたことやその時の感情を書き留めて振り返りたい</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="usage" class="section-usage section-container background-colo--light">
+        <section id="usage" class="section-usage section-container background-color--light">
             <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">Daily Dairyの使い方</h2>
                 <ul class="usage-container">
-                    <li class="usage-item" data-count="01">
-                        <p class="num"></p>
-                        <h3>ウェアラブル端末と同期して自動的に感情を記録</h3>
-                        <img>
+                    <li class="usage-item">
+                        <h3 class="usage-item__text" data-count="01">
+                            <p>ウェアラブル端末と同期</p>
+                            <p>自動的に感情を記録</p>
+                        </h3>
+                        <img class="usage-item__image" src="img/img_usage01.svg">
                     </li>
-                    <li class="usage-item" data-count="02">
-                        <p class="num"></p>
-                        <h3>感情記録とともに考えていたことを記録</h3>
-                        <img>
+                    <li class="usage-item">
+                        <h3 class="usage-item__text" data-count="02">
+                            <p>感情記録とともに</p>
+                            <p>考えていたことを記録</p>
+                        </h3>
+                        <img class="usage-item__image" src="img/img_usage02.svg">
                     </li>
-                    <li class="usage-item" data-count="03">
-                        <p class="num"></p>
-                        <h3>記録内容をAIがコメント、新たな気付きを得られるかも</h3>
-                        <img>
+                    <li class="usage-item">
+                        <h3 class="usage-item__text" data-count="03">
+                            <p>記録内容にAIがコメント</p>
+                            <p>気付きを得られるかも</p>
+                        </h3>
+                        <img class="usage-item__image" src="img/img_usage03.svg">
                     </li>
                 </ul>
             </div>
@@ -94,45 +100,55 @@
                 <div class="users-voice-container">
                     <div class="users-voice-itemwrapper">
                         <div class="user-voice-item">
-                            <p class="user-voice-item__bodytext">（ここにユーザーの声が入ります）</p>
+                            <p class="user-voice-item__bodytext">
+                                このアプリは使いやすくて、日々の記録がとてもスムーズにできます。私は仕事の合間や家でのリラックスタイムに使っています。特に、シンプルなインターフェースが気に入っています。これまでに使ったジャーナルアプリと比べても、このアプリの使いやすさには驚きました。これからもずっと使い続ける予定です。
+                            </p>
                             <div class="user-voice-userprofile">
                                 <img class="user-voice-userprofile__icon" src="img/img_user_avater01.svg">
-                                <p class="user-voice-userprofile__text">10代・学生</p>
+                                <p class="user-voice-userprofile__text">30代・会社員</p>
                             </div>
                         </div>
                         <div class="user-voice-item">
-                            <p class="user-voice-item__bodytext">（ここにユーザーの声が入ります）</p>
+                            <p class="user-voice-item__bodytext">
+                                デザインがシンプルで見やすく、自分の感想や考えを整理するのに最適です。お気に入りのアプリになりました！私は大学生で、勉強や日常生活の中で利用しています。特に、カスタマイズ性が高く、自分好みに設定できる点が良いですね。他の友達にも勧めています。
+                            </p>
                             <div class="user-voice-userprofile">
                                 <img class="user-voice-userprofile__icon" src="img/img_user_avater02.svg">
-                                <p class="user-voice-userprofil__text">10代・学生</p>
+                                <p class="user-voice-userprofile__text">10代・学生</p>
                             </div>
                         </div>
                         <div class="user-voice-item">
-                            <p class="user-voice-item__bodytext">（ここにユーザーの声が入ります）</p>
+                            <p class="user-voice-item__bodytext">
+                                毎日の気持ちを振り返る習慣がついたおかげで、ストレスが減りました。おすすめのアプリです！私は会社員で、仕事の合間や通勤中に利用しています。セキュリティ面でも信頼できるので安心しています。これからも改善を期待しつつ、長く愛用していきたいと思います。
+                            </p>
                             <div class="user-voice-userprofile">
                                 <img class="user-voice-userprofile__icon" src="img/img_user_avater03.svg">
-                                <p class="user-voice-userprofile__text">10代・学生</p>
+                                <p class="user-voice-userprofile__text">20代・会社員</p>
                             </div>
                         </div>
                         <div class="user-voice-item">
-                            <p class="user-voice-item__bodytext">（ここにユーザーの声が入ります）</p>
+                            <p class="user-voice-item__bodytext">
+                                ジャーナルを書くことが苦手だったけど、このアプリを使ってから続けられています。とても便利です！私は主婦で、家事の合間や子供が寝た後に使用しています。感情や日々の出来事を記録することがストレス解消につながっています。このアプリのおかげで日常がより充実している気がします。
+                            </p>
                             <div class="user-voice-userprofile">
                                 <img class="user-voice-userprofile__icon" src="img/img_user_avater04.svg">
-                                <p class="user-voice-userprofile__text">10代・学生</p>
+                                <p class="user-voice-userprofile__text">30代・主婦</p>
                             </div>
                         </div>
                         <div class="user-voice-item">
-                            <p class="user-voice-item__bodytext">（ここにユーザーの声が入ります）</p>
+                            <p class="user-voice-item__bodytext">
+                                データが安全に保存されているので安心して使えます。他のアプリと比べても抜群の品質です！私はフリーランスで、仕事のメモやアイデアもこのアプリで管理しています。これからもこの安定感を持続してほしいと思います。
+                            </p>
                             <div class="user-voice-userprofile">
                                 <img class="user-voice-userprofile__icon" src="img/img_user_avater05.svg">
-                                <p class="user-voice-userprofile__text">10代・学生</p>
+                                <p class="user-voice-userprofile__text">40代・フリーランス</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="security" class="secrity-section section-container">
+        <section id="security" class="security-section section-container">
             <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">プライバシーの保護について</h2>
                 <div class="security-container">
@@ -147,22 +163,18 @@
                 </div>
             </div>
         </section>
-        <section id="plan" class="plan section-container background-color--light">
+        <section id="plan" class="section-container background-color--light">
             <div class="contents-container contents-container--spacing">
                 <h2 class="section-heading">プラン</h2>
+                <div class="plan-item-trial">
+                    <p class="plan-item-trial__largetext">有料プランは、14日間無料トライアルを利用できます</p>
+                    <p class="plan-item-trial__text">トライアル終了の2日前にお知らせ</p>
+                </div>
                 <div class="plan-container">
                     <div class="plan-item">
                         <div class="plan-item-title plan-item-title--secondary">
                             <p class="plan-item-title__text">レギュラープラン</p>
-                            <div class="switchbox">
-                                <input type="radio" name="switch" id="switch_01" class="switchbox__flag" checked><label for="switch_01" class="switchbox__label">月額</label>
-                                <input type="radio" name="switch" id="switch_02" class="switchbox__flag"><label for="switch_02" class="switchbox__label">年額</label>
-                            </div>
-                            <div class="switch_01-content plan-item-title-inner">
-                                <span class="plan-item-title__text">1ヶ月</span>
-                                <span class="plan-item-title__largetext">¥500</span>
-                            </div>
-                            <div class="switch_02-content plan-item-title-inner">
+                            <div class="plan-item-title-inner">
                                 <span class="plan-item-title__text">1年</span>
                                 <span class="plan-item-title__largetext">¥5,500</span>
                             </div>
@@ -174,10 +186,6 @@
                             <li class="plan-item-function__text">デイリーウィークリーレター</li>
                             <li class="plan-item-function__text">AIコメント機能（月10回まで）</li>
                         </ul>
-                        <div class="plan-item-trial">
-                            <p>30日間の無料トライアル期間つき</p>
-                            <p>トライアル終了の2日前に通知が届きます</p>
-                        </div>
                     </div>
                     <div class="plan-item">
                         <div class="plan-item-title plan-item-title--normal">
@@ -233,8 +241,8 @@
                 </div>
             </div>
         </section>
-        <section id="message">
-            <div class="contents">
+        <section id="message" class="section-container background-color--dark">
+            <div class="contents-container contents-container--spacing">
                 <span>思考や感情の変化を記録し自分を知る</span>
                 <span>ジャーナリングアプリ</span>
                 <span>Daily Dairy</span>
@@ -243,7 +251,7 @@
             </div>
             <img>
         </section>
-        <footer id="footer">
+        <footer id="footer" class="section-footer">
             <p>©︎Daily Dairy 2024</p>
         </footer>
     </body>
