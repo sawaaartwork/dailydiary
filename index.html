@@ -3,219 +3,277 @@
     <head>
         <meta charset="UTF-8">
         <title>Daily Dairy</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header id="header">
-            <img class="logo">
-            <a href="">アプリをダウンロード</a>
+        <header id="header" class="section-header">
+            <img class="header__logo" src="img/dd_white.svg">
+            <a class="button button--primary" href="#message">ダウンロード</a>
         </header>
-        <section class="hero">
-            <span>思考や感情の変化を記録し</span>
-            <span>自分を知る</span>
-            <span>ジャーナリングアプリ</span>
-            <h1>Daily Dairy</h1>
-            <a href=""></a>
-            <a href=""></a>
+        <section id="hero" class="section-hero section-hero--decolation">
+            <div class="hero-maincontents">
+                <div>
+                    <p class="maincatch__text maincatch__text--base">思考や感情の変化を記録し</p>
+                    <p class="maincatch__text maincatch__text--base">自分を知る</p>
+                </div>
+                <div>
+                    <p class="maincatch__text maincatch__text--small">ジャーナリングアプリ</p>
+                    <h1 class="maincatch__text maincatch__text--large">DailyDairy</h1>
+                </div>
+                <div class="button-wrapper">
+                    <a href=""><img class="button-appstore" src="img/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"></a>
+                    <a href=""><img class="button-googlestore" src="img/GetItOnGooglePlay_Badge_Web_color_Japanese.svg"></a>
+                </div>
+            </div>
+            <div class="hero-backimage">
+                <div class="hero-backimage__image hero-backimage__image--upper"></div>
+                <div class="hero-backimage__image hero-backimage__image--lower"></div>
+            </div>
         </section>
-        <section id="problems">
-            <h2>このようなお悩みはありませんか</h2>
-            <ul class="problems-container">
-                <li class="cards">
-                    <p>自分の気持ちや価値観がよくわからない</p>
-                </li>
-                <li class="cards">
-                    <p>気軽に記録・振り返りをしたい</p>
-                </li>
-                <li class="cards">
-                    <p>考えていたことやその時の感情を</p>
-                    <p>書き留めて振り返りたい</p>
-                </li>
-            </ul>
+        <section id="problems" class="section-problems section-container">
+            <div class="contents-container contents-container--spacing">
+                <h2 class="section-heading">このようなお悩みはありませんか</h2>
+                <ul class="problems-container">
+                    <li class="problems-item">
+                        <p class="problems-item__text">自分の気持ちや価値観がよくわからない</p>
+                    </li>
+                    <li class="problems-item">
+                        <p class="problems-item__text">気軽に記録・振り返りをしたい</p>
+                    </li>
+                    <li class="problems-item">
+                        <p class="problems-item__text">考えていたことやその時の感情を書き留めて振り返りたい</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section id="usage">
-            <h2>Daily Dairyの使い方</h2>
-            <ul class="usage-container">
-                <li class="usages" data-count="01">
-                    <p class="num"></p>
-                    <h3>ウェアラブル端末と同期して自動的に感情を記録</h3>
-                    <img>
-                </li>
-                <li class="usages" data-count="02">
-                    <p class="num"></p>
-                    <h3>感情記録とともに考えていたことを記録</h3>
-                    <img>
-                </li>
-                <li class="usages" data-count="03">
-                    <p class="num"></p>
-                    <h3>記録内容をAIがコメント、新たな気付きを得られるかも</h3>
-                    <img>
-                </li>
-            </ul>
+        <section id="usage" class="section-usage section-container background-color--light">
+            <div class="contents-container contents-container--spacing">
+                <h2 class="section-heading">Daily Dairyの使い方</h2>
+                <ul class="usage-container">
+                    <li class="usage-item">
+                        <h3 class="usage-item__text" data-count="01">
+                            <p>ウェアラブル端末と同期</p>
+                            <p>自動的に感情を記録</p>
+                        </h3>
+                        <img class="usage-item__image" src="img/img_usage01.svg">
+                    </li>
+                    <li class="usage-item">
+                        <h3 class="usage-item__text" data-count="02">
+                            <p>感情記録とともに</p>
+                            <p>考えていたことを記録</p>
+                        </h3>
+                        <img class="usage-item__image" src="img/img_usage02.svg">
+                    </li>
+                    <li class="usage-item">
+                        <h3 class="usage-item__text" data-count="03">
+                            <p>記録内容にAIがコメント</p>
+                            <p>気付きを得られるかも</p>
+                        </h3>
+                        <img class="usage-item__image" src="img/img_usage03.svg">
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section id="finctions">
-            <h2>機能一覧</h2>
-            <div class="functions-container">
-                <div class="functions">
-                    <img>
-                    <p>感情やストレス状況の記録</p>
-                </div>
-                <div class="functions">
-                    <img>
-                    <p>ウェアラブルデバイスとの連携</p>
-                </div>
-                <div class="functions">
-                    <img>
-                    <p>考えたことメモ</p>
-                </div>
-                <div class="functions">
-                    <img>
-                    <p>デイリー・ウィークリーレター</p>
-                </div>
-                <div class="functions">
-                    <img>
-                    <p>AIコメント機能</p>
+        <section id="functions" class="section-functions section-container">
+            <div class="contents-container contents-container--spacing">
+                <h2 class="section-heading">機能一覧</h2>
+                <div class="functions-container">
+                    <div class="function-item">
+                        <img class="function-item__icon" src="img/icon_feature_feeling.svg">
+                        <span class="function-item__text">感情やストレス状況の記録</span>
+                    </div>
+                    <div class="function-item">
+                        <img class="function-item__icon" src="img/icon_feature_wearable.svg">
+                        <span class="function-item__text">ウェアラブルデバイスとの連携</span>
+                    </div>
+                    <div class="function-item">
+                        <img class="function-item__icon" src="img/icon_feature_memo.svg">
+                        <span class="function-item__text">考えたことメモ</span>
+                    </div>
+                    <div class="function-item">
+                        <img class="function-item__icon" src="img/icon_feature_letter.svg">
+                        <span class="function-item__text">デイリー・ウィークリーレター</span>
+                    </div>
+                    <div class="function-item">
+                        <img class="function-item__icon" src="img/icon_feature_aicomment.svg">
+                        <span class="function-item__text">AIコメント機能</span>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="users-voice">
-            <h2>ご利用者さまの声</h2>
-            <div class="users-voice-container">
-                <div class="user-voices">
-                    <p>（ここにユーザーの声が入ります）</p>
-                    <img>
-                    <p>10代・学生</p>
-                </div>
-                <div class="user-voices">
-                    <p>（ここにユーザーの声が入ります）</p>
-                    <img>
-                    <p>10代・学生</p>
-                </div>
-                <div class="user-voices">
-                    <p>（ここにユーザーの声が入ります）</p>
-                    <img>
-                    <p>10代・学生</p>
-                </div>
-                <div class="user-voices">
-                    <p>（ここにユーザーの声が入ります）</p>
-                    <img>
-                    <p>10代・学生</p>
-                </div>
-                <div class="user-voices">
-                    <p>（ここにユーザーの声が入ります）</p>
-                    <img>
-                    <p>10代・学生</p>
-                </div>
-                <div class="user-voices">
-                    <p>（ここにユーザーの声が入ります）</p>
-                    <img>
-                    <p>10代・学生</p>
+        <section id="users-voice" class="user-voise-section section-container background-color--light">
+            <div class="contents-container contents-container--nospacing">
+                <h2 class="section-heading">ご利用者さまの声</h2>
+                <div class="users-voice-container">
+                    <div class="users-voice-itemwrapper">
+                        <div class="user-voice-item">
+                            <p class="user-voice-item__bodytext">
+                                このアプリは使いやすくて、日々の記録がとてもスムーズにできます。私は仕事の合間や家でのリラックスタイムに使っています。特に、シンプルなインターフェースが気に入っています。これまでに使ったジャーナルアプリと比べても、このアプリの使いやすさには驚きました。これからもずっと使い続ける予定です。
+                            </p>
+                            <div class="user-voice-userprofile">
+                                <img class="user-voice-userprofile__icon" src="img/img_user_avater01.svg">
+                                <p class="user-voice-userprofile__text">30代・会社員</p>
+                            </div>
+                        </div>
+                        <div class="user-voice-item">
+                            <p class="user-voice-item__bodytext">
+                                デザインがシンプルで見やすく、自分の感想や考えを整理するのに最適です。お気に入りのアプリになりました！私は大学生で、勉強や日常生活の中で利用しています。特に、カスタマイズ性が高く、自分好みに設定できる点が良いですね。他の友達にも勧めています。
+                            </p>
+                            <div class="user-voice-userprofile">
+                                <img class="user-voice-userprofile__icon" src="img/img_user_avater02.svg">
+                                <p class="user-voice-userprofile__text">10代・学生</p>
+                            </div>
+                        </div>
+                        <div class="user-voice-item">
+                            <p class="user-voice-item__bodytext">
+                                毎日の気持ちを振り返る習慣がついたおかげで、ストレスが減りました。おすすめのアプリです！私は会社員で、仕事の合間や通勤中に利用しています。セキュリティ面でも信頼できるので安心しています。これからも改善を期待しつつ、長く愛用していきたいと思います。
+                            </p>
+                            <div class="user-voice-userprofile">
+                                <img class="user-voice-userprofile__icon" src="img/img_user_avater03.svg">
+                                <p class="user-voice-userprofile__text">20代・会社員</p>
+                            </div>
+                        </div>
+                        <div class="user-voice-item">
+                            <p class="user-voice-item__bodytext">
+                                ジャーナルを書くことが苦手だったけど、このアプリを使ってから続けられています。とても便利です！私は主婦で、家事の合間や子供が寝た後に使用しています。感情や日々の出来事を記録することがストレス解消につながっています。このアプリのおかげで日常がより充実している気がします。
+                            </p>
+                            <div class="user-voice-userprofile">
+                                <img class="user-voice-userprofile__icon" src="img/img_user_avater04.svg">
+                                <p class="user-voice-userprofile__text">30代・主婦</p>
+                            </div>
+                        </div>
+                        <div class="user-voice-item">
+                            <p class="user-voice-item__bodytext">
+                                データが安全に保存されているので安心して使えます。他のアプリと比べても抜群の品質です！私はフリーランスで、仕事のメモやアイデアもこのアプリで管理しています。これからもこの安定感を持続してほしいと思います。
+                            </p>
+                            <div class="user-voice-userprofile">
+                                <img class="user-voice-userprofile__icon" src="img/img_user_avater05.svg">
+                                <p class="user-voice-userprofile__text">40代・フリーランス</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="security">
-            <h2>プライバシーの保護について</h2>
-            <div class="container">
-                <div class="item">
-                    <img>
-                    <p>DailyDairyが入力内容をアプリのサーバーに送信したり、サードパーティアプリに送信することはありません。</p>
-                </div>
-                <div class="item">
-                    <img>
-                    <p>バックアップは、安全な暗号化チャネルを通して転送されます。</p>
+        <section id="security" class="security-section section-container">
+            <div class="contents-container contents-container--spacing">
+                <h2 class="section-heading">プライバシーの保護について</h2>
+                <div class="security-container">
+                    <div class="security-item">
+                        <img class="security-item__image" src="img/img_sec_notsend.svg">
+                        <p class="security-item__text">DailyDairyが入力内容をアプリのサーバーに送信したり、サードパーティアプリに送信することはありません。</p>
+                    </div>
+                    <div class="security-item">
+                        <img class="security-item__image" src="img/img_sec_secure.svg">
+                        <p class="security-item__text">バックアップは、安全な暗号化チャネルを通して転送されます。</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="plan">
-            <input type="radio" name="switch" id="switch_01" checked><label for="switch_01">月額</label>
-            <input type="radio" name="switch" id="switch_02"><label for="switch_02">年額</label>
-            <div class="container">
-                <div class="item">
-                    <div class="title ">
-                        <span>レギュラープラン</span>
-                        <span>1ヶ月</span>
-                        <span>¥500</span>
-                    </div>
-                    <div class="title">
-                        <span>レギュラープラン</span>
-                        <span>1年</span>
-                        <span>¥5,500</span>
-                    </div>
-                    <ul class="function">
-                        <li>感情の記録</li>
-                        <li>感情の自動記録（ウェアラブルデバイスとの同期）</li>
-                        <li>考えたことメモ</li>
-                        <li>デイリーウィークリーレター</li>
-                        <li>AIコメント機能（月10回まで）</li>
-                    </ul>
-                    <div class="trial">
-                        <p>30日間の無料トライアル期間つき</p>
-                        <p>トライアル終了の2日前に通知が届きます</p>
-                    </div>
+        <section id="plan" class="section-container background-color--light">
+            <div class="contents-container contents-container--spacing">
+                <h2 class="section-heading">プラン</h2>
+                <div class="plan-item-trial">
+                    <p class="plan-item-trial__largetext">有料プランは、14日間無料トライアルを利用できます</p>
+                    <p class="plan-item-trial__text">トライアル終了の2日前にお知らせ</p>
                 </div>
-                <div class="plans">
-                    <div class="title">
-                        <span>フリープラン</span>
-                        <span>¥0</span>
+                <div class="plan-container">
+                    <div class="plan-item">
+                        <div class="plan-item-title plan-item-title--secondary">
+                            <p class="plan-item-title__text">レギュラープラン</p>
+                            <div class="plan-item-title-inner">
+                                <span class="plan-item-title__text">1年</span>
+                                <span class="plan-item-title__largetext">¥5,500</span>
+                            </div>
+                        </div>
+                        <ul class="plan-item-function">
+                            <li class="plan-item-function__text">感情の記録</li>
+                            <li class="plan-item-function__text">感情の自動記録（ウェアラブルデバイスとの同期）</li>
+                            <li class="plan-item-function__text">考えたことメモ</li>
+                            <li class="plan-item-function__text">デイリーウィークリーレター</li>
+                            <li class="plan-item-function__text">AIコメント機能（月10回まで）</li>
+                        </ul>
                     </div>
-                    <ul class="function">
-                        <li>感情の記録（ウェアラブルデバイスからのインポートはできません）</li>
-                        <li>考えたことメモ</li>
-                        <li>ウィークリーレター（直近1週間のもののみ閲覧可能）</li>
-                        <li>AIコメント機能（月1回まで）</li>
-                    </ul>
+                    <div class="plan-item">
+                        <div class="plan-item-title plan-item-title--normal">
+                            <p class="plan-item-title__text">フリープラン</p>
+                            <p class="plan-item-title__largetext">¥0</p>
+                        </div>
+                        <ul class="plan-item-function">
+                            <li class="plan-item-function__text">感情の記録（ウェアラブルデバイスからのインポートはできません）</li>
+                            <li class="plan-item-function__text">考えたことメモ</li>
+                            <li class="plan-item-function__text">ウィークリーレター（直近1週間のもののみ閲覧可能）</li>
+                            <li class="plan-item-function__text">AIコメント機能（月1回まで）</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="faq">
-            <div class="container">
-                <div class="item">
-                    <details class="question">
-                        <summary>ここに質問文が入ります</summary>
-                        <img class="icon">
+        <section id="faq" class="section-faq section-container">
+            <div class="contents-container contents-container--spacing">
+                <h2 class="section-heading">よくある質問</h2>
+                <div class="faq-container">
+                    <details open class="faq-item">
+                        <summary class="faq-question">
+                            <p class="faq-question__text">
+                                アプリのデータはどこに保存されますか？
+                            </p>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer__text">
+                                アプリのデータは強力な暗号化を使用してクラウド上に安全に保存されます。個人情報の保護には最大限の配慮をしています。
+                            </p>
+                        </div>
                     </details>
-                    <div class="answer">
-                        <p>
-                            ここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入ります
-                        </p>
-                    </div>
-                </div>
-                <div class="item">
-                    <details class="question">
-                        <summary>ここに質問文が入ります</summary>
-                        <img class="icon">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <p class="faq-question__text">バックアップ機能はありますか？</p>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer__text">
+                                はい、アプリには自動バックアップ機能が搭載されており、データの損失を防ぐためのバックアップオプションが利用できます。
+                            </p>
+                        </div>
                     </details>
-                    <div class="answer">
-                        <p>
-                            ここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入ります
-                        </p>
-                    </div>
-                </div>
-                <div class="item">
-                    <details class="question">
-                        <summary>ここに質問文が入ります</summary>
-                        <img class="icon">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <p class="faq-question__text">利用料金はありますか？無料トライアルはありますか？</p>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer__text">
+                                現在、基本的な機能は無料でご利用いただけます。有料プランもございますが、それらの詳細についてはお問い合わせいただくか、公式サイトをご確認ください。また、無料トライアル期間もご用意しておりますので、ぜひお試しください
+                            </p>
+                        </div>
                     </details>
-                    <div class="answer">
-                        <p>
-                            ここに回答が入りますここに回答が入りますここに回答が入りますここに回答が入ります
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
-        <section id="message">
-            <div class="contents">
-                <span>思考や感情の変化を記録し自分を知る</span>
-                <span>ジャーナリングアプリ</span>
-                <span>Daily Dairy</span>
-                <a href=""></a>
-                <a href=""></a>
+        <section id="message" class="section-message section-container background-color--dark">
+            <div class="contents-container contents-container--spacing contents-container--message">
+                <div class="message-container">
+                    <div>
+                        <p class="maincatch__text maincatch__text--small">ジャーナリングアプリ</p>
+                        <h1 class="maincatch__text maincatch__text--large">DailyDairy</h1>
+                    </div>
+                    <div>
+                        <p class="maincatch__text maincatch__text--base">ダウンロードして</p>
+                        <p class="maincatch__text maincatch__text--base">はじめよう</p>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href=""><img class="button-appstore" src="img/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"></a>
+                        <a href=""><img class="button-googlestore" src="img/GetItOnGooglePlay_Badge_Web_color_Japanese.svg"></a>
+                    </div>
+                </div>
+                <div class="message__image"></div>
             </div>
-            <img>
         </section>
-        <footer id="footer">
-            <p>©︎Daily Dairy 2024</p>
+        <footer id="footer" class="section-footer">
+            <p>©︎DailyDairy 2024</p>
         </footer>
     </body>
 </html>
